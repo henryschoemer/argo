@@ -8,7 +8,7 @@ spec:
   sources:
     - repoURL: https://github.com/henryschoemer/argo.git
       targetRevision: HEAD
-      path: charts/argocd
+      path: charts/argo
       helm:
         valueFiles:
           - ../values/argocd.yaml
