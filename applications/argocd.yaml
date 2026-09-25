@@ -11,7 +11,7 @@ spec:
       path: charts/argo
       helm:
         valueFiles:
-          - ../values/argocd.yaml
+          - ../../values/argocd.yaml
     - repoURL: https://github.com/henryschoemer/argo.git
       targetRevision: HEAD
       path: manifests/argocd
