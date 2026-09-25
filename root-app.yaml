@@ -6,7 +6,7 @@ metadata:
 spec:
   project: infra
   source:
-    repoURL:
+    repoURL: https://github.com/henryschoemer/argo.git
     targetRevision: HEAD
     path: applications
   destination:
