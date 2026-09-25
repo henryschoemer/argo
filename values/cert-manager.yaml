@@ -1,0 +1,2 @@
+# leaving empty to use the default values from the chart
+# to see defaults visit 'charts/cert-manager/values.yaml'
