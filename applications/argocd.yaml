@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  project: infra
+  sources:
+    - repoURL: https://github.com/henryschoemer/argo.git
+      targetRevision: HEAD
+      path: charts/argocd
+      helm:
+        valueFiles:
+          - ../values/argocd.yaml
+    - repoURL: https://github.com/henryschoemer/argo.git
+      targetRevision: HEAD
+      path: manifests/argocd
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
